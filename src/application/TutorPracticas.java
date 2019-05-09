@@ -2,72 +2,84 @@ package application;
 
 public class TutorPracticas {
 	
-	String nombre;
-	String apellidos;
-	String email;
-	String nif;
-	int telefono;
+	String NIF;
+	String Nombre;
+	String Apellidos;
+	int Telefono;
+	String Email;
+	String Num_Convenio;
 	
 	
-	public TutorPracticas(String nombre, String apellidos, String email, String nif, int telefono) {
+	public TutorPracticas(String nIF, String nombre, String apellidos, int telefono, String email,
+			String num_Convenio) {
 		super();
-		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.email = email;
-		this.nif = nif;
-		this.telefono = telefono;
+		NIF = nIF;
+		Nombre = nombre;
+		Apellidos = apellidos;
+		Telefono = telefono;
+		Email = email;
+		Num_Convenio = num_Convenio;
+	}
+
+
+	public String getNIF() {
+		return NIF;
+	}
+
+
+	public void setNIF(String nIF) {
+		NIF = nIF;
 	}
 
 
 	public String getNombre() {
-		return nombre;
+		return Nombre;
 	}
 
 
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		Nombre = nombre;
 	}
 
 
 	public String getApellidos() {
-		return apellidos;
+		return Apellidos;
 	}
 
 
 	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
-	}
-
-
-	public String getEmail() {
-		return email;
-	}
-
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-
-	public String getNif() {
-		return nif;
-	}
-
-
-	public void setNif(String nif) {
-		this.nif = nif;
+		Apellidos = apellidos;
 	}
 
 
 	public int getTelefono() {
-		return telefono;
+		return Telefono;
 	}
 
 
 	public void setTelefono(int telefono) {
-		this.telefono = telefono;
+		Telefono = telefono;
 	}
-	
+
+
+	public String getEmail() {
+		return Email;
+	}
+
+
+	public void setEmail(String email) {
+		Email = email;
+	}
+
+
+	public String getNum_Convenio() {
+		return Num_Convenio;
+	}
+
+
+	public void setNum_Convenio(String num_Convenio) {
+		Num_Convenio = num_Convenio;
+	}
 	
 	
 	

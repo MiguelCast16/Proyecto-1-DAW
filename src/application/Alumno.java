@@ -2,73 +2,76 @@ package application;
 
 public class Alumno {
 	
-	String nombre;
-	String apellidos;
-	String email;
-	String nif;
-	int telefono;
+	String Nombre;
+	String Apellidos;
+	String Email;
+	String NIF;
+	int Telefono;
 	
 	
-	public Alumno(String nombre, String apellidos, String email, String nif, int telefono) {
+	public Alumno(String nombre, String apellidos, String email, String nIF, int telefono) {
 		super();
-		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.email = email;
-		this.nif = nif;
-		this.telefono = telefono;
+		Nombre = nombre;
+		Apellidos = apellidos;
+		Email = email;
+		NIF = nIF;
+		Telefono = telefono;
 	}
 
 
 	public String getNombre() {
-		return nombre;
+		return Nombre;
 	}
 
 
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		Nombre = nombre;
 	}
 
 
 	public String getApellidos() {
-		return apellidos;
+		return Apellidos;
 	}
 
 
 	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+		Apellidos = apellidos;
 	}
 
 
 	public String getEmail() {
-		return email;
+		return Email;
 	}
 
 
 	public void setEmail(String email) {
-		this.email = email;
+		Email = email;
 	}
 
 
-	public String getNif() {
-		return nif;
+	public String getNIF() {
+		return NIF;
 	}
 
 
-	public void setNif(String nif) {
-		this.nif = nif;
+	public void setNIF(String nIF) {
+		NIF = nIF;
 	}
 
 
 	public int getTelefono() {
-		return telefono;
+		return Telefono;
 	}
 
 
 	public void setTelefono(int telefono) {
-		this.telefono = telefono;
+		Telefono = telefono;
 	}
 	
 	
+	
+	
+
 	
 	
 	

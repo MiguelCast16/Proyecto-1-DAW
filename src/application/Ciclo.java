@@ -2,91 +2,79 @@ package application;
 
 public class Ciclo {
 	
-	String nombre;
-	int codigo;
-	String capacidades;
-	String familia_profesional;
-	String tipo;
-	String clave_fp;
-	String actividades;
-	String criterios;
+	int Codigo;
+	String Nombre;
+	String Tipo;
+	String Familia_Profesional;
+	String Capacidades;
+	String Actividades;
+	String Criterios;
+	String Clave_FP;
 	
-	public Ciclo(String nombre, int codigo, String capacidades, String familia_profesional, String tipo,String clave_fp, String actividades, String criterios) {
+	
+	
+	public Ciclo(int codigo, String nombre, String tipo, String familia_Profesional, String capacidades,
+			String actividades, String criterios, String clave_FP) {
 		super();
-		this.nombre = nombre;
-		this.codigo = codigo;
-		this.capacidades = capacidades;
-		this.familia_profesional = familia_profesional;
-		this.tipo = tipo;
-		this.clave_fp = clave_fp;
-		this.actividades = actividades;
-		this.criterios = criterios;
+		Codigo = codigo;
+		Nombre = nombre;
+		Tipo = tipo;
+		Familia_Profesional = familia_Profesional;
+		Capacidades = capacidades;
+		Actividades = actividades;
+		Criterios = criterios;
+		Clave_FP = clave_FP;
 	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
+	
+	
 	public int getCodigo() {
-		return codigo;
+		return Codigo;
 	}
-
 	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+		Codigo = codigo;
 	}
-
-	public String getCapacidades() {
-		return capacidades;
+	public String getNombre() {
+		return Nombre;
 	}
-
-	public void setCapacidades(String capacidades) {
-		this.capacidades = capacidades;
+	public void setNombre(String nombre) {
+		Nombre = nombre;
 	}
-
-	public String getFamilia_profesional() {
-		return familia_profesional;
-	}
-
-	public void setFamilia_profesional(String familia_profesional) {
-		this.familia_profesional = familia_profesional;
-	}
-
 	public String getTipo() {
-		return tipo;
+		return Tipo;
 	}
-
 	public void setTipo(String tipo) {
-		this.tipo = tipo;
+		Tipo = tipo;
 	}
-
-	public String getClave_fp() {
-		return clave_fp;
+	public String getFamilia_Profesional() {
+		return Familia_Profesional;
 	}
-
-	public void setClave_fp(String clave_fp) {
-		this.clave_fp = clave_fp;
+	public void setFamilia_Profesional(String familia_Profesional) {
+		Familia_Profesional = familia_Profesional;
 	}
-
+	public String getCapacidades() {
+		return Capacidades;
+	}
+	public void setCapacidades(String capacidades) {
+		Capacidades = capacidades;
+	}
 	public String getActividades() {
-		return actividades;
+		return Actividades;
 	}
-
 	public void setActividades(String actividades) {
-		this.actividades = actividades;
+		Actividades = actividades;
 	}
-
 	public String getCriterios() {
-		return criterios;
+		return Criterios;
 	}
-
 	public void setCriterios(String criterios) {
-		this.criterios = criterios;
+		Criterios = criterios;
+	}
+	public String getClave_FP() {
+		return Clave_FP;
+	}
+	public void setClave_FP(String clave_FP) {
+		Clave_FP = clave_FP;
 	}
 	
 	
-
 }
