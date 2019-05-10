@@ -9,12 +9,12 @@ public class Alumno {
 	int Telefono;
 	
 	
-	public Alumno(String nombre, String apellidos, String email, String nIF, int telefono) {
+	public Alumno(String nombre, String apellidos, String email, String Nif, int telefono) {
 		super();
 		Nombre = nombre;
 		Apellidos = apellidos;
 		Email = email;
-		NIF = nIF;
+		NIF = Nif;
 		Telefono = telefono;
 	}
 
