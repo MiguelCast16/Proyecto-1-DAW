@@ -13,13 +13,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ControladorAdmEmpresas">
    <children>
       <AnchorPane prefHeight="486.0" prefWidth="756.0">
          <children>
             <MenuBar layoutY="-3.0" prefHeight="52.0" prefWidth="756.0" AnchorPane.bottomAnchor="434.0" AnchorPane.topAnchor="0.0" />
-            <ImageView fitHeight="58.0" fitWidth="92.0" layoutX="321.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="58.0" fitWidth="92.0" layoutX="321.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
                <image>
                   <Image url="@Imagenes%20App/logo-colegio-valle-del-miro.png" />
                </image>
@@ -47,12 +46,12 @@
                   <Font name="System Bold Italic" size="19.0" />
                </font>
             </Text>
-            <Button layoutX="577.0" layoutY="172.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="120.0" text="Añadir Empresa" AnchorPane.bottomAnchor="271.0">
+            <Button fx:id="Anadir" layoutX="577.0" layoutY="172.0" mnemonicParsing="false" onAction="#Anadir" prefHeight="43.0" prefWidth="120.0" text="Añadir Empresa" AnchorPane.bottomAnchor="271.0">
                <effect>
                   <InnerShadow color="#2584bc" />
                </effect>
             </Button>
-            <Button layoutX="577.0" layoutY="314.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="120.0" text="Modificar Empresa" AnchorPane.bottomAnchor="129.0">
+            <Button fx:id="Modificar" layoutX="577.0" layoutY="261.0" mnemonicParsing="false" onAction="#Modificar" prefHeight="43.0" prefWidth="120.0" text="Modificar Empresa" AnchorPane.bottomAnchor="182.0">
                <effect>
                   <InnerShadow color="#2584bc" />
                </effect>
@@ -86,12 +85,12 @@
                   <InnerShadow />
                </effect>
             </Button>
-            <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="510.0" layoutY="172.0">
+            <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="510.0" layoutY="172.0" AnchorPane.topAnchor="172.0">
                <image>
-                  <Image url="@../../../../Imagenes%20App/Imagen%20Añadir%20Libro.png" />
+                  <Image url="@Imagenes%20App/Imagen%20Añadir%20Libro.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="510.0" layoutY="314.0">
+            <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="510.0" layoutY="261.0" AnchorPane.leftAnchor="510.0" AnchorPane.topAnchor="261.0">
                <image>
                   <Image url="@Imagenes%20App/Imagen%20Modificar%20Libro.png" />
                </image>
@@ -106,6 +105,16 @@
                   <InnerShadow />
                </effect>
             </TextField>
+            <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="517.0" layoutY="337.0" AnchorPane.leftAnchor="510.0" AnchorPane.topAnchor="350.0">
+               <image>
+                  <Image url="@Imagenes%20App/Imagen%20Añadir.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="TutorE" layoutX="577.0" layoutY="350.0" mnemonicParsing="false" onAction="#TutorE" prefHeight="43.0" prefWidth="120.0" text="Añadir Tutor">
+               <effect>
+                  <InnerShadow color="#2584bc" />
+               </effect>
+            </Button>
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />

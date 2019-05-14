@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ControladorAnadirAlum">
+   <children>
+      <MenuBar layoutX="1.0" prefHeight="50.0" prefWidth="400.0" />
+      <ImageView fitHeight="58.0" fitWidth="92.0" layoutX="268.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="1.0">
+         <image>
+            <Image url="@Imagenes%20App/logo-colegio-valle-del-miro.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="20.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="59.0" text="Atras" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="8.0" />
+      <TextField fx:id="NIF" layoutX="140.0" layoutY="88.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="140.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="71.0" />
+      <Text layoutX="76.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="124.0" />
+      <TextField fx:id="Nombre" layoutX="140.0" layoutY="140.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="76.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="177.0" />
+      <TextField fx:id="Telefono" layoutX="140.0" layoutY="247.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="56.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="230.0" />
+      <TextField fx:id="Apellidos" layoutX="140.0" layoutY="194.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Button fx:id="AnadirA" layoutX="141.0" layoutY="360.0" mnemonicParsing="false" onAction="#AnadirA" prefHeight="56.0" prefWidth="120.0" text="Añadir Alumno" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="360.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </Button>
+      <Text layoutX="66.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="283.0" />
+      <TextField fx:id="Email" layoutX="140.0" layoutY="300.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>

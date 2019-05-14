@@ -1,21 +1,29 @@
-package application;
+package Model;
 
-public class Alumno {
+public class Tutor {
 	
+	String NIF;
 	String Nombre;
 	String Apellidos;
 	String Email;
-	String NIF;
-	int Telefono;
 	
 	
-	public Alumno(String nombre, String apellidos, String email, String Nif, int telefono) {
+	public Tutor(String nIF, String nombre, String apellidos, String email) {
 		super();
+		NIF = nIF;
 		Nombre = nombre;
 		Apellidos = apellidos;
 		Email = email;
-		NIF = Nif;
-		Telefono = telefono;
+	}
+
+
+	public String getNIF() {
+		return NIF;
+	}
+
+
+	public void setNIF(String nIF) {
+		NIF = nIF;
 	}
 
 
@@ -47,34 +55,11 @@ public class Alumno {
 	public void setEmail(String email) {
 		Email = email;
 	}
-
-
-	public String getNIF() {
-		return NIF;
-	}
-
-
-	public void setNIF(String nIF) {
-		NIF = nIF;
-	}
-
-
-	public int getTelefono() {
-		return Telefono;
-	}
-
-
-	public void setTelefono(int telefono) {
-		Telefono = telefono;
-	}
 	
 	
 	
-	
-
-	
-	
-	
-	
-
 }
+	
+	
+	
+	

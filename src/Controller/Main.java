@@ -1,4 +1,4 @@
-package application;
+package Controller;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,11 +16,11 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			this.primaryStage = primaryStage;
-			this.primaryStage.setTitle("Componentes FX");
+			this.primaryStage.setTitle("Login FX");
 
 			 // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("Principal.fxml"));
+            loader.setLocation(Main.class.getResource("../View/Login.fxml"));
             rootLayout = (AnchorPane) loader.load();
 
             // Show the scene containing the root layout.
@@ -36,3 +36,4 @@ public class Main extends Application {
 		launch(args);
 	}
 }
+
