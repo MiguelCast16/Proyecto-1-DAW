@@ -19,12 +19,12 @@ public class Empresa {
 	String Familia_Profesional;
 	int Codigo_Centro;
 	
-	public Empresa(String num_Convenio, String cIF, String representante, String nIF_Representante, String nombre,
+	public Empresa(String num_Convenio, String Cif, String representante, String nIF_Representante, String nombre,
 			String pais, String ciudad, String provincia, String direccion, String cP, int telefono, int fax,
 			String ciudad_FirmaConvenio, String fecha_FirmaConvenio, String familia_Profesional, int codigo_Centro) {
 		super();
 		Num_Convenio = num_Convenio;
-		CIF = cIF;
+		CIF = Cif;
 		Representante = representante;
 		NIF_Representante = nIF_Representante;
 		Nombre = nombre;
@@ -39,6 +39,13 @@ public class Empresa {
 		Fecha_FirmaConvenio = fecha_FirmaConvenio;
 		Familia_Profesional = familia_Profesional;
 		Codigo_Centro = codigo_Centro;
+	}
+	
+	
+	public Empresa(String Nombre)
+	{	
+		super();
+		this.Nombre=Nombre;
 	}
 
 	public String getNum_Convenio() {

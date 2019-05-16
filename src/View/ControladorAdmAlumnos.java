@@ -1,6 +1,8 @@
 package View;
 
 import java.io.IOException;
+import java.util.ResourceBundle.Control;
+
 
 import Controller.Main;
 import Model.Alumno;
@@ -11,9 +13,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -43,6 +47,8 @@ public class ControladorAdmAlumnos {
 	
 	@FXML
 	private TableColumn<Alumno,String> Email;
+	
+
 	
 
 	private final ObservableList<Alumno> data = FXCollections.observableArrayList();
@@ -85,8 +91,13 @@ public class ControladorAdmAlumnos {
     
 }
 	
+	
+	
+	
 	public void Modificar(ActionEvent event) throws IOException{
 		
+		Alumno selectedItem = Tabla.getSelectionModel().getSelectedItem();
+        if (selectedItem != null) {
 		 
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("../View/ModificarAlumno.fxml"));
         
@@ -95,14 +106,25 @@ public class ControladorAdmAlumnos {
         /* Creamos la segunda ventana como otro stage */
         Stage ventanaMA = new Stage();
         ventanaMA.setTitle("ModificarAlumnos");
-        
+        ControladorModificarAlumno alumnocontroller = loader.getController();
+        alumnocontroller.setAlumno(selectedItem);
         /* Le decimos a la ventana quién es la ventana original */
         Scene scene = new Scene(Menu);
         ventanaMA.setScene(scene);
         ventanaMA.show();
        
+        }
+        else {
+        	Alert alert = new Alert(AlertType.ERROR); 
+            alert.setTitle("No Seleccionado");
+            alert.setHeaderText("Persona no seleccionada");
+            alert.setContentText("Por favor!!! Seleccione una persona de la tabla");
+
+            alert.showAndWait();
+        }
+	}
    
     
 }
 
-}
+
