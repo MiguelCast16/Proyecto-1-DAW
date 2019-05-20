@@ -1,4 +1,4 @@
-<h1>Proyecto Gestión de Prácticas FCT </h1>
+<tittle>Proyecto Gestión de Prácticas FCT </tittle>
 <br>
 
 
