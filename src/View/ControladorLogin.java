@@ -21,6 +21,9 @@ public class ControladorLogin {
 	private Button Login;
 	
 	@FXML
+	private Button Cerrar;
+	
+	@FXML
 	private TextField Usuario;
 	
 	@FXML
@@ -29,7 +32,7 @@ public class ControladorLogin {
 
 
 		
-	public void Login(ActionEvent event) throws IOException{
+	public void Login(ActionEvent event) throws IOException, InterruptedException{
 		
 		String usr=Usuario.getText();
 		String pswd=Contrasena.getText();
@@ -49,8 +52,7 @@ public class ControladorLogin {
 	         Scene scene = new Scene(MenuP);
 	         ventana.setScene(scene);
 	         ventana.show();
-	         
-	         
+	       
 	         
 		 }
 		else {
@@ -65,10 +67,6 @@ public class ControladorLogin {
 	     
 	 }
 	
-	
-	
-	
-	 
 	
 
 	}

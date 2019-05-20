@@ -1,7 +1,6 @@
 package View;
 
 import java.io.IOException;
-import java.util.ResourceBundle.Control;
 
 
 import Controller.Main;
@@ -17,6 +16,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
@@ -29,6 +29,9 @@ public class ControladorAdmAlumnos {
 	
 	@FXML
 	private Button Modificar;
+	
+	@FXML
+	private Button Incluir;
 	
 	@FXML
 	private TableView<Alumno> Tabla;
@@ -48,6 +51,26 @@ public class ControladorAdmAlumnos {
 	@FXML
 	private TableColumn<Alumno,String> Email;
 	
+	@FXML
+	private TextField ApellidosB;
+	
+	@FXML
+	private TextField dni;
+	
+	@FXML
+	private TextField ciclo;
+	
+	@FXML
+	private TextField empresa;
+	
+	@FXML
+	private Button Buscar;
+	
+	@FXML
+	private Button Restablecer;
+	
+	TestConexion uno = new TestConexion();
+
 
 	
 
@@ -61,13 +84,12 @@ public class ControladorAdmAlumnos {
 		Apellidos.setCellValueFactory(new PropertyValueFactory<Alumno,String>("Apellidos"));
 		Telefono.setCellValueFactory(new PropertyValueFactory<Alumno,Integer>("Telefono"));
 		Email.setCellValueFactory(new PropertyValueFactory<Alumno,String>("Email"));
-		TestConexion uno = new TestConexion();
 		data.addAll(uno.Alumno());
 		Tabla.setItems(uno.Alumno());
 		
 		}
 	
-	
+
 	
 	
 	
@@ -90,8 +112,14 @@ public class ControladorAdmAlumnos {
    
     
 }
+
+	public void Limpiar(ActionEvent event) throws IOException{
 	
+		data.addAll(uno.Alumno());
+		Tabla.setItems(uno.Alumno());
 	
+	}
+		
 	
 	
 	public void Modificar(ActionEvent event) throws IOException{
@@ -117,12 +145,78 @@ public class ControladorAdmAlumnos {
         else {
         	Alert alert = new Alert(AlertType.ERROR); 
             alert.setTitle("No Seleccionado");
-            alert.setHeaderText("Persona no seleccionada");
-            alert.setContentText("Por favor!!! Seleccione una persona de la tabla");
+            alert.setHeaderText("Persona No Seleccionada");
+            alert.setContentText("Por Favor!!! Seleccione Una Persona De La Tabla");
 
             alert.showAndWait();
         }
 	}
+	
+	public void Incluir(ActionEvent event) throws IOException{
+		
+		 
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../View/Cursan.fxml"));
+        
+        AnchorPane Menu = (AnchorPane)loader.load();
+   
+        /* Creamos la segunda ventana como otro stage */
+        Stage ventanaIAC = new Stage();
+        ventanaIAC.setTitle("AnadirAlCiclo");
+        
+        /* Le decimos a la ventana quién es la ventana original */
+        Scene scene = new Scene(Menu);
+        ventanaIAC.setScene(scene);
+        ventanaIAC.show();
+       
+   
+    
+}
+	
+	
+	public void Buscar(ActionEvent event) throws IOException{
+		
+		String dn =dni.getText();
+		String ape = ApellidosB.getText();
+		String cicl = ciclo.getText(); 
+		String emp = empresa.getText();
+		
+        if (dni.getText().isEmpty()==false)
+        {
+        	
+        	
+    		data.addAll(uno.BusquedaAlumnosNif(dn));
+    		Tabla.setItems(uno.BusquedaAlumnosNif(dn));
+        		
+        }
+        
+        else if (ApellidosB.getText().isEmpty()==false)
+        {
+        	
+        	data.addAll(uno.BusquedaAlumnosApellidos(ape));
+    		Tabla.setItems(uno.BusquedaAlumnosApellidos(ape));
+        }
+        
+        else if (empresa.getText().isEmpty()==false)
+        {
+        	data.addAll(uno.BusquedaAlumnosEmpresa(emp));
+    		Tabla.setItems(uno.BusquedaAlumnosEmpresa(emp));
+        }
+        
+        else if (ciclo.getText().isEmpty()==false)
+        {
+        	data.addAll(uno.BusquedaAlumnosCiclo(cicl));
+    		Tabla.setItems(uno.BusquedaAlumnosCiclo(cicl));
+        }
+        
+        else {
+        	Alert alert = new Alert(AlertType.ERROR); 
+            alert.setTitle("Campos Vacios");
+            alert.setHeaderText("Debes Seleccionar Un Campo De Búsqueda");
+            alert.setContentText("Por favor!!! Seleccione Un Campo De Búsqueda");
+            alert.showAndWait();
+        }
+       
+}
    
     
 }

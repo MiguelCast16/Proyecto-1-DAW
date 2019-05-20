@@ -1,8 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="520.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ControladorAnadirEmpresa">
+   <children>
+      <MenuBar layoutY="-3.0" prefHeight="49.0" prefWidth="661.0" AnchorPane.bottomAnchor="471.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="50.0" fitWidth="91.0" layoutX="259.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="285.0">
+         <image>
+            <Image url="@Imagenes%20App/logo-colegio-valle-del-miro.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="10.0" layoutY="8.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="59.0" text="Atras">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect></Button>
+      <TextField fx:id="Nombre" layoutX="53.0" layoutY="108.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="459.0" AnchorPane.topAnchor="108.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="53.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de Empresa:" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="82.05078125" />
+      <Text layoutX="53.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Representante:" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="146.0" />
+      <TextField fx:id="Representante" layoutX="53.0" layoutY="169.0" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="169.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="53.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF Representante:" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="507.6640625" AnchorPane.topAnchor="205.0" />
+      <TextField fx:id="NIF_Representante" layoutX="53.0" layoutY="230.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="459.0" AnchorPane.topAnchor="230.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="53.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos Representante:" wrappingWidth="138.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="268.0" />
+      <TextField fx:id="Apellidos" layoutX="53.0" layoutY="291.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="459.0" AnchorPane.topAnchor="291.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Button fx:id="Anadir" layoutX="281.0" layoutY="457.0" mnemonicParsing="false" onAction="#AnadirA" prefHeight="49.0" prefWidth="111.0" text="Añadir Empresa" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="281.0" AnchorPane.rightAnchor="277.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </Button>
+      <Text layoutX="262.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provincia:" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="348.474609375" AnchorPane.topAnchor="82.0" />
+      <TextField fx:id="Provincia" layoutX="262.0" layoutY="108.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="254.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="262.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad:" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="359.033203125" AnchorPane.topAnchor="146.0" />
+      <TextField fx:id="Ciudad" layoutX="262.0" layoutY="169.0" prefHeight="25.0" prefWidth="145.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="254.0" AnchorPane.topAnchor="169.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="262.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código Postal:" AnchorPane.leftAnchor="262.0" AnchorPane.topAnchor="205.05078125" />
+      <TextField fx:id="CP" layoutX="262.0" layoutY="230.0" prefHeight="25.0" prefWidth="145.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="254.0" AnchorPane.topAnchor="230.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="262.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número Convenio:" AnchorPane.leftAnchor="262.0" AnchorPane.topAnchor="268.0" />
+      <TextField fx:id="Num_Convenio" layoutX="262.0" layoutY="291.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="291.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <TextField fx:id="FAX" layoutX="463.0" layoutY="108.0" AnchorPane.rightAnchor="53.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="463.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fax:" AnchorPane.leftAnchor="463.0" AnchorPane.topAnchor="82.0" />
+      <Text layoutX="463.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono:" AnchorPane.leftAnchor="463.0" AnchorPane.topAnchor="146.0" />
+      <TextField fx:id="Telefono" layoutX="463.0" layoutY="169.0" AnchorPane.leftAnchor="463.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="169.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <TextField fx:id="CIF" layoutX="463.0" layoutY="230.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="230.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="463.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIF:" AnchorPane.topAnchor="205.05078125" />
+      <TextField fx:id="Direccion" layoutX="463.0" layoutY="291.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="291.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="463.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion:" AnchorPane.topAnchor="268.05078125" />
+      <Text layoutX="53.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha Firma Convenio:" AnchorPane.topAnchor="331.0" />
+      <TextField fx:id="Fecha" layoutX="53.0" layoutY="352.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.topAnchor="352.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="262.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad Firma Convenio:" AnchorPane.topAnchor="331.0" />
+      <TextField fx:id="CiudadFirma" layoutX="260.0" layoutY="352.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.topAnchor="352.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <Text layoutX="463.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Familia Profesional:" AnchorPane.rightAnchor="96.19921875" AnchorPane.topAnchor="331.05078125" />
+      <TextField fx:id="Familia" layoutX="463.0" layoutY="352.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="352.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+      <ChoiceBox fx:id="Lista" layoutX="53.0" layoutY="413.0" prefWidth="150.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="413.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect></ChoiceBox>
+      <Text layoutX="53.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centro:" AnchorPane.bottomAnchor="108.94921875" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="394.05078125" />
+      <Button fx:id="Limpiar" layoutX="318.0" layoutY="415.0" mnemonicParsing="false" onAction="#Limpiar" prefHeight="25.0" prefWidth="78.0" text="Restablecer" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="15.0">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </Button>
+      <Text layoutX="463.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pais:" AnchorPane.bottomAnchor="108.0" AnchorPane.rightAnchor="178.17578125" />
+      <TextField fx:id="Pais" layoutX="463.0" layoutY="411.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.bottomAnchor="82.0" AnchorPane.rightAnchor="53.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect>
+      </TextField>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
 </AnchorPane>
-

@@ -31,7 +31,11 @@ public class ControladorInicio {
 	
 	@FXML
 	private Button Generar;
+
+
+	   ;
 	
+		
 	
 	public void Alumnos(ActionEvent event) throws IOException{
 		
@@ -48,9 +52,8 @@ public class ControladorInicio {
         Scene scene = new Scene(Menu);
         ventanaA.setScene(scene);
         ventanaA.show();
-       
-   
-    
+        
+        
 }
 
 	public void Empresas(ActionEvent event) throws IOException{
@@ -152,6 +155,7 @@ public class ControladorInicio {
    
     
 }
+	
 	
 	
 }

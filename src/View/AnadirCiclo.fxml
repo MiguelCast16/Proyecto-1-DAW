@@ -17,59 +17,67 @@
             <Image url="@Imagenes%20App/logo-colegio-valle-del-miro.png" />
          </image>
       </ImageView>
-      <Button layoutX="20.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="59.0" text="Atras" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="8.0" />
-      <TextField fx:id="Nombre" layoutX="140.0" layoutY="88.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+      <Button layoutX="20.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="59.0" text="Atras" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="8.0">
+         <effect>
+            <InnerShadow color="#2584bc" />
+         </effect></Button>
+      <TextField fx:id="Nombre" layoutX="140.0" layoutY="88.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </TextField>
-      <Text layoutX="140.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Del Ciclo:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="71.0" />
-      <Text layoutX="76.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="124.0" />
-      <TextField fx:id="Codigo" layoutX="140.0" layoutY="140.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+      <Text layoutX="140.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Del Ciclo:" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="71.0" />
+      <Text layoutX="76.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo:" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="124.0" />
+      <TextField fx:id="Codigo" layoutX="140.0" layoutY="140.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </TextField>
-      <Text layoutX="76.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clave FP:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="177.0" />
-      <TextField fx:id="Tipo" layoutX="140.0" layoutY="247.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+      <Text layoutX="76.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clave FP:" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="177.0" />
+      <TextField fx:id="Tipo" layoutX="140.0" layoutY="247.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </TextField>
-      <Text layoutX="56.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="230.0" />
-      <TextField fx:id="ClaveFP" layoutX="140.0" layoutY="194.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+      <Text layoutX="56.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo:" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="230.0" />
+      <TextField fx:id="ClaveFP" layoutX="140.0" layoutY="194.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </TextField>
-      <Button fx:id="AnadirA" layoutX="140.0" layoutY="529.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="120.0" text="Añadir Ciclo" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="519.0">
+      <Button fx:id="AnadirA" layoutX="140.0" layoutY="529.0" mnemonicParsing="false" onAction="#AnadirA" prefHeight="56.0" prefWidth="120.0" text="Añadir Ciclo" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="519.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </Button>
-      <Text layoutX="66.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Familia Profesional" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="283.0" />
-      <TextField fx:id="Familia" layoutX="140.0" layoutY="300.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
+      <Text layoutX="66.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Familia Profesional" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="283.0" />
+      <TextField fx:id="Familia" layoutX="114.0" layoutY="300.0" prefHeight="25.0" prefWidth="190.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </TextField>
-      <Text layoutX="76.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacidades" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="336.0" />
-      <TextField fx:id="Capacidades" layoutX="140.0" layoutY="352.0" prefHeight="25.0" prefWidth="120.0">
+      <Text layoutX="76.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacidades" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="336.0" />
+      <TextField fx:id="Capacidades" layoutX="140.0" layoutY="352.0" prefHeight="25.0" prefWidth="120.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </TextField>
-      <Text layoutX="86.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actividades:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="389.0" />
-      <TextField fx:id="Actividades" layoutX="140.0" layoutY="405.0" prefHeight="25.0" prefWidth="120.0">
+      <Text layoutX="86.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actividades:" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="389.0" />
+      <TextField fx:id="Actividades" layoutX="140.0" layoutY="405.0" prefHeight="25.0" prefWidth="120.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </TextField>
-      <Text layoutX="96.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Criterios:" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="442.0" />
-      <TextField fx:id="Criterios" layoutX="140.0" layoutY="458.0" prefHeight="25.0" prefWidth="120.0" AnchorPane.leftAnchor="140.0">
+      <Text layoutX="96.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Criterios:" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="442.0" />
+      <TextField fx:id="Criterios" layoutX="140.0" layoutY="458.0" prefHeight="25.0" prefWidth="120.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
          <effect>
             <InnerShadow color="#2584bc" />
          </effect>
       </TextField>
+      <Button fx:id="Limpiar" layoutX="318.0" layoutY="415.0" mnemonicParsing="false" onAction="#Limpiar" prefHeight="25.0" prefWidth="78.0" text="Restablecer" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="14.0">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </Button>
    </children>
 </AnchorPane>

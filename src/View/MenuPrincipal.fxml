@@ -11,15 +11,20 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ControladorInicio">
    <children>
-      <AnchorPane prefWidth="635.0">
+      <AnchorPane layoutX="-14.0" prefHeight="403.0" prefWidth="661.0">
          <children>
+            <ImageView fitHeight="304.0" fitWidth="548.0" layoutX="59.0" layoutY="71.0" opacity="0.04" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="55.0">
+               <image>
+                  <Image url="@Imagenes%20App/logo-colegio-valle-del-miro.png" />
+               </image>
+            </ImageView>
             <MenuBar layoutY="-3.0" prefHeight="52.0" prefWidth="661.0" AnchorPane.bottomAnchor="351.0" AnchorPane.topAnchor="0.0" />
             <ImageView fitHeight="50.0" fitWidth="91.0" layoutX="259.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="285.0">
                <image>
                   <Image url="@Imagenes%20App/logo-colegio-valle-del-miro.png" />
                </image>
             </ImageView>
-            <Button fx:id="Empresas" layoutX="90.0" layoutY="115.0" mnemonicParsing="false" onAction="#Empresas" prefHeight="49.0" prefWidth="158.0" text="ADMINISTRAR EMPRESAS" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="115.0">
+            <Button fx:id="Empresas" layoutX="105.0" layoutY="115.0" mnemonicParsing="false" onAction="#Empresas" prefHeight="49.0" prefWidth="158.0" text="ADMINISTRAR EMPRESAS" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="115.0">
                <effect>
                   <InnerShadow color="#8c0909" />
                </effect>
@@ -27,7 +32,7 @@
                   <Font name="Calibri Bold Italic" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="Alumnos" layoutX="401.0" layoutY="115.0" mnemonicParsing="false" onAction="#Alumnos" prefHeight="49.0" prefWidth="158.0" text="ADMINISTRAR ALUMNOS">
+            <Button fx:id="Alumnos" layoutX="403.0" layoutY="115.0" mnemonicParsing="false" onAction="#Alumnos" prefHeight="49.0" prefWidth="158.0" text="ADMINISTRAR ALUMNOS" AnchorPane.leftAnchor="403.0" AnchorPane.rightAnchor="101.0">
                <effect>
                   <InnerShadow color="#8c0909" />
                </effect>
@@ -35,7 +40,7 @@
                   <Font name="Calibri Bold Italic" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="Asignar" layoutX="127.0" layoutY="195.0" mnemonicParsing="false" onAction="#Asignar" prefHeight="49.0" prefWidth="158.0" text="ASIGNAR PRÁCTICAS" AnchorPane.leftAnchor="127.0">
+            <Button fx:id="Asignar" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" onAction="#Asignar" prefHeight="49.0" prefWidth="158.0" text="ASIGNAR PRÁCTICAS" AnchorPane.leftAnchor="129.0">
                <effect>
                   <InnerShadow color="#244921" />
                </effect>
@@ -43,7 +48,7 @@
                   <Font name="Calibri Bold Italic" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="Generar" layoutX="376.0" layoutY="195.0" mnemonicParsing="false" onAction="#Generar" prefHeight="49.0" prefWidth="158.0" text="GENERAR ANEXOS" AnchorPane.rightAnchor="127.0">
+            <Button fx:id="Generar" layoutX="379.0" layoutY="195.0" mnemonicParsing="false" onAction="#Generar" prefHeight="49.0" prefWidth="158.0" text="GENERAR ANEXOS" AnchorPane.rightAnchor="125.0">
                <effect>
                   <InnerShadow color="#244921" />
                </effect>
@@ -51,7 +56,7 @@
                   <Font name="Calibri Bold Italic" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="Tutores" layoutX="90.0" layoutY="271.0" mnemonicParsing="false" onAction="#Tutores" prefHeight="49.0" prefWidth="158.0" text="ADMINISTRAR TUTORES" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="90.0">
+            <Button fx:id="Tutores" layoutX="105.0" layoutY="271.0" mnemonicParsing="false" onAction="#Tutores" prefHeight="49.0" prefWidth="158.0" text="ADMINISTRAR TUTORES" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="399.0">
                <effect>
                   <InnerShadow color="#758608" />
                </effect>
@@ -59,7 +64,7 @@
                   <Font name="Calibri Bold Italic" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="Ciclos" layoutX="376.0" layoutY="271.0" mnemonicParsing="false" onAction="#Ciclos" prefHeight="49.0" prefWidth="158.0" text="ADMINISTRAR CICLOS" AnchorPane.rightAnchor="90.0">
+            <Button fx:id="Ciclos" layoutX="403.0" layoutY="271.0" mnemonicParsing="false" onAction="#Ciclos" prefHeight="49.0" prefWidth="158.0" text="ADMINISTRAR CICLOS" AnchorPane.leftAnchor="403.0" AnchorPane.rightAnchor="101.0">
                <effect>
                   <InnerShadow color="#758608" />
                </effect>
@@ -67,6 +72,36 @@
                   <Font name="Calibri Bold Italic" size="12.0" />
                </font>
             </Button>
+            <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="52.0" layoutY="271.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="52.0">
+               <image>
+                  <Image url="@Imagenes%20App/FotoTutor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="547.0" layoutY="195.0" AnchorPane.bottomAnchor="159.0" AnchorPane.topAnchor="195.0">
+               <image>
+                  <Image url="@Imagenes%20App/FotoGenerar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="571.0" layoutY="115.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="115.0">
+               <image>
+                  <Image url="@Imagenes%20App/FotoAlumno.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="68.0" layoutY="195.0" AnchorPane.bottomAnchor="159.0" AnchorPane.topAnchor="195.0">
+               <image>
+                  <Image url="@Imagenes%20App/FotoAsignar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="571.0" layoutY="271.0" AnchorPane.bottomAnchor="83.0" AnchorPane.rightAnchor="44.0">
+               <image>
+                  <Image url="@Imagenes%20App/FotoCiclos.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="45.0" layoutY="115.0" AnchorPane.leftAnchor="45.0">
+               <image>
+                  <Image url="@Imagenes%20App/FotoE.png" />
+               </image>
+            </ImageView>
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />

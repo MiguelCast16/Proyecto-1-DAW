@@ -8,8 +8,8 @@ public class AsignanPracticas {
 	String Num_Convenio;
 	String NIF_Tutor;
 	String NIF_TutorEmpresa;
-	Date Fecha_Inicio;
-	Date Fecha_Fin;
+	String Fecha_Inicio;
+	String Fecha_Fin;
 	int Horas_Dia;
 	int Horas_Total;
 	String  Horas_TardeInicio;
@@ -18,7 +18,7 @@ public class AsignanPracticas {
 	String Horas_MañanaFin;
 	
 	public AsignanPracticas(String nIF_Alumno, String num_Convenio, String nIF_Tutor, String nIF_TutorEmpresa,
-			Date fecha_Inicio, Date fecha_Fin, int horas_Dia, int horas_Total, String horas_TardeInicio,
+			String fecha_Inicio, String fecha_Fin, int horas_Dia, int horas_Total, String horas_TardeInicio,
 			String horas_TardeFin, String horas_MañanaInicio, String horas_MañanaFin) {
 		super();
 		NIF_Alumno = nIF_Alumno;
@@ -67,19 +67,19 @@ public class AsignanPracticas {
 		NIF_TutorEmpresa = nIF_TutorEmpresa;
 	}
 
-	public Date getFecha_Inicio() {
+	public String getFecha_Inicio() {
 		return Fecha_Inicio;
 	}
 
-	public void setFecha_Inicio(Date fecha_Inicio) {
+	public void setFecha_Inicio(String fecha_Inicio) {
 		Fecha_Inicio = fecha_Inicio;
 	}
 
-	public Date getFecha_Fin() {
+	public String getFecha_Fin() {
 		return Fecha_Fin;
 	}
 
-	public void setFecha_Fin(Date fecha_Fin) {
+	public void setFecha_Fin(String fecha_Fin) {
 		Fecha_Fin = fecha_Fin;
 	}
 
@@ -133,5 +133,7 @@ public class AsignanPracticas {
 	
 	
 	
-
+	
 }
+	
+	
