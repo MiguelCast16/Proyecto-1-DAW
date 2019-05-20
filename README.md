@@ -2,12 +2,12 @@
 <br>
 
 
-<h1>Modelo Entidad-Relación</h1>
+<h2>Modelo Entidad-Relación</h2>
 
 ![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Diagrama%20Proyecto%20Solucion%20Final.png)
 
 
-<h1>Algunas Capturas De La Aplicación </h1>
+<h2>Algunas Capturas De La Aplicación </h2>
 
 ![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Captura%201.png)
 
