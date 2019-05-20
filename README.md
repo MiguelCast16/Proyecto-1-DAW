@@ -9,9 +9,8 @@
 
 <h2>Algunas Capturas De La Aplicación </h2>
 
-<center>
-  ![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Captura%201.png)
-</center>
+![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Captura%201.png)
+
 
 </br>
 
