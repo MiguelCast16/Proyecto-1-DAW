@@ -1,7 +1,6 @@
 <h1>Proyecto Gestión de Prácticas FCT </h1>
 <br>
 
-
 <h2>Modelo Entidad-Relación</h2>
 
 ![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Diagrama%20Proyecto%20Solucion%20Final.png)
