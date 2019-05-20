@@ -17,7 +17,7 @@
 
 </br>
 
-![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Captura%203.png)
+![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Captura%203.PNG)
 
 </br>
 
