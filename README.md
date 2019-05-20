@@ -5,8 +5,6 @@
 
 ![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Diagrama%20Proyecto%20Solucion%20Final.png)
 
-<h2>Script De Creación De Tablas</h2>
-
 
 
 <h2>Algunas Capturas De La Aplicación </h2>
