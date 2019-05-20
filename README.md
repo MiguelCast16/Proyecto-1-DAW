@@ -7,8 +7,7 @@
 
 <h2>Script De Creación De Tablas</h2>
 
-![](https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Scripts%20Proyecto.sql)
-
+https://github.com/MiguelCast16/Proyecto-1-DAW-Miguel/blob/master/Scripts%20Proyecto.sql
 
 <h2>Algunas Capturas De La Aplicación </h2>
 
